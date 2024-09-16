@@ -1,5 +1,5 @@
 const axios=require('axios');
-const URL="https://web-production-69664.up.railway.app/users/login";
+const URL="https://web-production-69664.up.railway.app/login";
 
 document.querySelector('form').addEventListener('submit', async function(event) {
     event.preventDefault(); // Evitar que el formulario se envíe
