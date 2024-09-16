@@ -1,3 +1,4 @@
+import '../styles/style.css'; // Ajusta la ruta según la estructura de tu proyecto
 const navToggle=document.querySelector(".nav-toggle");
 const navMenu=document.querySelector(".nav-menu");
 navToggle.addEventListener("click",()=>{
