@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa-Servicios</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a4cdd3bea9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.9/glider.min.js"></script>
+    <script defer src="../scripts/index.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (necesario para Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <!--Barra Principal-->
+    <header class="header">
+        <nav class="nav">
+             
+                 <img src="../assets/logoSpa.png" class="img-logo" alt="">
+                 <a href="../index.html" class="logo nav-link" id="link-logo">SPA Sentirse Bien</a> 
+                 <button class="nav-toggle">
+                     <i class="fa-solid fa-bars"></i>
+                 </button>            
+             
+             
+                 <ul class="nav-menu">
+                     <li class="nav-menu-item"><a href="./service.html" class="nav-menu-link nav-link" id="nav-servicios">Servicios</a></li>
+                     <li class="nav-menu-item"><a href="./comentaios.html" class="nav-menu-link nav-link" id="nav-comentarios">Comentarios</a></li>
+                     <li class="nav-menu-item"><a href="./contactanos.html" class="nav-menu-link nav-link" id="nav-contactanos">Contactanos</a></li>
+                     <li class="nav-menu-item"><a href="./login.html" 
+                         class="nav-menu-link nav-link" id="nav-ingresar">Ingresar</a></li>
+                 </ul>
+               
+         </nav>        
+    </header>
+    <!--Fin barra principal--> 
+
+    <div class="spam-pre-carousel">
+        <h2>NUESTROS SERVICIOS</h2>
+    </div>
+
+
+
+    <!-- Carrusel -->
+    <div class="carrusel ">
+        <div class="carrusel-contenedor ">           
+            <div class="carrusel-lista owl-carousel service-carousel ">
+                <div class="carrusel-elemento">
+                    <img class="img-fluid" src="../assets/massage.jpg" alt="">
+                    <div class="servicio-tex">
+                        <h4>MASAJES</h4>
+                        <div class="servicio-inf">
+                            <ul class="lista-descripcion">
+                                <li>Anti-stress</li>
+                                <li>Descontracturantes</li>
+                                <li>Masajes con piedras calientes</li>
+                                <li>Circulatorios</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="carrusel-elemento">
+                    <img class="img-fluid" src="../assets/belleza.jpg" alt="">
+                    <div class="servicio-tex">
+                        <h4>BELLEZA</h4>
+                        <div class="servicio-inf">
+                            <ul class="lista-descripcion">
+                                <li>Lifting de pestaña</li>
+                                <li>Depilación facial</li>
+                                <li>Belleza de manos y pies</li> 
+                                                               
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="carrusel-elemento">
+                    <img class="img-fluid" src="../assets/facial.jpg" alt="">
+                    <div class="servicio-tex">
+                        <h4>TRATAMIENTOS FACIALES</h4>
+                        <div class="servicio-inf">
+                            <ul class="lista-descripcion">
+                                <li>Punta de Diamante: Microexfoliación</li>
+                                <li>Limpieza profunda + Hidratación</li>
+                                <li>Crio frecuencia facial</li>
+                                                               
+                            </ul>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="carrusel-elemento">
+                    <img class="img-fluid" src="../assets/cuerpo.jpg" alt="">
+                    <div class="servicio-tex">
+                        <h4>TRATAMIENTOS CORPORALES</h4>
+                        <div class="servicio-inf">
+                            <ul class="lista-descripcion">
+                                <li>VelaSlim</li>
+                                <li>DermoHealth</li>
+                                <li>Criofrecuencia</li>
+                                <li>Ultracavitación</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Carrusel -->
+
+    <!-- form turnos -->
+    <div class="contenedor-turnos">
+        <div class="login-contenedor">
+            <form action="">
+                <h1>TURNOS</h1>
+                <div class="login-input-contenedor">
+                    <input type="date"  required>
+                    
+                </div>
+                <div class="login-input-contenedor">
+                    <input type="time" min="08:00" max="18:00" required>
+                    
+                </div>
+                <div class="login-input-contenedor">
+                    <select id="select-servicio" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option value="" selected>Seleccionar un servicio</option>
+                        <option value="1">MASAJES</option>
+                        <option value="2">BELLEZA</option>
+                        <option value="3">TRATAMIENTOS FACIALES</option>
+                        <option value="4"> TRATAMIENTOS CORPORALES</option>
+                    </select>                    
+                </div>
+                <div class="login-input-contenedor">
+                    <select id="select-detalle" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option value="1" selected>Seleccionar un servicio primero</option>                        
+                    </select>                    
+                </div>
+                <button type="submit" class="login-btn">Reservar</button>                
+            </form>        
+        </div>
+    </div>
+
+
+    <script src="../scripts/turnos.js"></script>
+    
+</body>
+</html>
