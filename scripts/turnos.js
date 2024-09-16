@@ -66,7 +66,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
 
     try {
         // Hacer la petición a la API para reservar el turno
-        const response = await axios.post('https://tu-api.com/agregar-turno', {
+        const response = await axios.post('https://web-production-69664.up.railway.app/turnos/', {
             fecha: fecha,
             hora: hora,
             servicio: servicio,

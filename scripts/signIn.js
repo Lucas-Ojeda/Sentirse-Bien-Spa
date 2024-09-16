@@ -5,7 +5,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     const username = document.querySelector('input[placeholder="Nombre de Usuario"]').value;
     const email = document.querySelector('input[placeholder="Correo Electronico"]').value;
     const fullName = document.querySelector('input[placeholder="Nombre Completo"]').value;
-    const age = document.querySelector('input[placeholder="Edad"]').value;
+    
     const password = document.querySelector('input[placeholder="Contraseña"]').value;
     const repeatPassword = document.querySelector('input[placeholder="Repetir Contraseña"]').value;
 
@@ -16,25 +16,23 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     }
 
     // Validar que los campos no estén vacíos
-    if (!username || !email || !fullName || !age || !password || !repeatPassword) {
+    if (!username || !email ||   !password || !repeatPassword) {
         alert('Por favor, complete todos los campos');
         return;
     }
 
     try {
         // Hacer la petición a la API para registrar al usuario
-        const response = await axios.post('https://tu-api.com/register', {
+        const response = await axios.post('https://web-production-69664.up.railway.app/user/register', {
             username: username,
             email: email,
-            fullName: fullName,
-            age: age,
             password: password
         });
 
         // Verificar si el registro fue exitoso
         if (response.data.success) {
             alert('Registro exitoso');
-            window.location.href = 'ruta-despues-de-registro.html'; // Redirigir a la página deseada
+            window.location.href = '../index.html'; // Redirigir a la página deseada
         } else {
             alert('Error en el registro');
         }
@@ -44,3 +42,4 @@ document.querySelector('form').addEventListener('submit', async function(event) 
         alert('Error al registrarse');
     }
 });
+
