@@ -5,7 +5,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     const username = document.querySelector('input[placeholder="Nombre de Usuario"]').value;
     const email = document.querySelector('input[placeholder="Correo Electronico"]').value;
     const fullName = document.querySelector('input[placeholder="Nombre Completo"]').value;
-    
+    const age = document.querySelector('input[placeholder="Edad"]').value;
     const password = document.querySelector('input[placeholder="Contraseña"]').value;
     const repeatPassword = document.querySelector('input[placeholder="Repetir Contraseña"]').value;
 
@@ -16,7 +16,7 @@ document.querySelector('form').addEventListener('submit', async function(event) 
     }
 
     // Validar que los campos no estén vacíos
-    if (!username || !email ||   !password || !repeatPassword) {
+    if (!username || !email ||  !age || !password || !repeatPassword) {
         alert('Por favor, complete todos los campos');
         return;
     }
@@ -26,7 +26,8 @@ document.querySelector('form').addEventListener('submit', async function(event) 
         const response = await axios.post('https://web-production-69664.up.railway.app/user/register', {
             username: username,
             email: email,
-            password: password
+            password: password,
+            age:age
         });
 
         // Verificar si el registro fue exitoso
